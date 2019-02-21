@@ -6,13 +6,14 @@ public class PlayerCollision : MonoBehaviour
 
 
 {
+    public GameObject mineExplosion;
+    public GameObject fishBubbles;
+
     public Animator playerAnimator;
     //Manages player animations
     
     bool hasntDied = true;
 
-    public GameObject mineExplosion;
-    public GameObject fishBubbles;
 
     void Update()
     {
@@ -45,6 +46,8 @@ public class PlayerCollision : MonoBehaviour
             //Place the object back in the queue
 
             Instantiate(mineExplosion, col.gameObject.transform.position, col.gameObject.transform.rotation);
+
+          
 
         }
 
