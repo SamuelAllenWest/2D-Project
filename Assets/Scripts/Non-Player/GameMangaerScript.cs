@@ -16,6 +16,9 @@ public class GameMangaerScript : MonoBehaviour
     {
         Instance = this;
         //Sets the Game Script Manager Instance to this singleton class
+
+        DontDestroyOnLoad(gameObject);
+        //Prevents this game object from being destroyed when we load a new scene
     }
 
 

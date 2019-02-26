@@ -17,7 +17,6 @@ public class ButtonFunctions : MonoBehaviour
     {
         // We are loading the scene named SampleScene from inside the project 
         SceneManager.LoadScene("SampleScene");
-        SceneManager.UnloadScene("Menu");
         //the Play button uses its parent's CS sheet and calls one of its functions, which is super user friendly in the editor. 10/10.
     }
     public void pressExit()
